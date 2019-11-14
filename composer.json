@@ -10,12 +10,18 @@
             "role":  "Lead Architect / Developer"
         }
     ],
+    "provide": {
+        "hiraeth/markdown-imp": "1.0.0"
+    },
     "require": {
         "hiraeth/app": "^2.0",
         "hiraeth/markdown": "^1.0",
         "league/commonmark": "^1.2",
         "league/commonmark-extras": "^1.2",
         "webuni/commonmark-attributes-extension": "^1.0"
+    },
+    "require-dev": {
+        "phpstan/phpstan": "^0.12.0@dev"
     },
     "autoload": {
         "classmap": ["src/"]
@@ -27,8 +33,5 @@
                 "config": ""
             }
         }
-    },
-    "require-dev": {
-        "phpstan/phpstan": "^0.12.0@dev"
     }
 }
