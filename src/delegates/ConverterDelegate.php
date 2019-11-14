@@ -28,7 +28,7 @@ class ConverterDelegate implements Hiraeth\Delegate
 		$extensions  = $app->getConfig('*', 'commonmark.extensions', []);
 
 		if (count($extensions)) {
-			foreach (array_merge(...$extensions) as $extension) {
+			foreach (array_merge(...array_values($extensions)) as $extension) {
 				$environment->addExtension($app->get($extension));
 			}
 		}
