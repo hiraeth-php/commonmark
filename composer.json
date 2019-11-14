@@ -2,6 +2,7 @@
     "name": "hiraeth/commonmark",
     "description": "CommonMark parsing for the Hiraeth Nano Framework",
     "minimum-stability": "dev",
+    "prefer-stable": true,
     "license": "MIT",
     "authors": [
         {
