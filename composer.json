@@ -15,6 +15,7 @@
         "hiraeth/markdown-imp": "1.0.0"
     },
     "require": {
+	"ext-mbstring": "*",
         "hiraeth/app": "^2.0",
         "hiraeth/markdown": "^1.0",
         "league/commonmark": "^1.0"
