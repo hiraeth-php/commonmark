@@ -4,6 +4,7 @@ namespace Hiraeth\CommonMark;
 
 use League\CommonMark;
 use Hiraeth\Markdown\Parser;
+use League\CommonMark\MarkdownConverter;
 
 /**
  * Provides proxying for CommonMark's Converter
@@ -23,7 +24,7 @@ class Proxy implements Parser
 	 *
 	 * @return void
 	 */
-	public function __construct(CommonMark\Converter $converter)
+	public function __construct(MarkdownConverter $converter)
 	{
 		$this->converter = $converter;
 	}

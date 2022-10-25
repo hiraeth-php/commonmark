@@ -4,6 +4,7 @@ namespace Hiraeth\CommonMark;
 
 use Hiraeth;
 use League\CommonMark;
+use League\CommonMark\Environment;
 
 /**
  * A Hiraeth Delegate capable of creating a CommonMark\Converter
@@ -15,7 +16,7 @@ class ConverterDelegate implements Hiraeth\Delegate
 	 */
 	public static function getClass(): string
 	{
-		return CommonMark\Converter::class;
+		return CommonMark\MarkdownConverter::class;
 	}
 
 
@@ -24,7 +25,7 @@ class ConverterDelegate implements Hiraeth\Delegate
 	 */
 	public function __invoke(Hiraeth\Application $app): object
 	{
-		$environment = CommonMark\Environment::createCommonMarkEnvironment();
+		$environment = new Environment();
 		$extensions  = $app->getConfig('*', 'commonmark.extensions', []);
 
 		if (count($extensions)) {
@@ -33,9 +34,6 @@ class ConverterDelegate implements Hiraeth\Delegate
 			}
 		}
 
-		return $app->share(new CommonMark\Converter(
-			new CommonMark\DocParser($environment),
-			new CommonMark\HtmlRenderer($environment)
-		));
+		return $app->share(new CommonMark\MarkdownConverter($environment));
 	}
 }
