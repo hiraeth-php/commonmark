@@ -12,7 +12,7 @@
         }
     ],
     "provide": {
-        "hiraeth/markdown-imp": "1.0.0"
+        "hiraeth/markdown-imp": "2.0.0"
     },
     "require": {
 	"ext-mbstring": "*",
