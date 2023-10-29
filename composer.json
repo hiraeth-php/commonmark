@@ -19,8 +19,8 @@
     },
     "require": {
 	"ext-mbstring": "*",
-        "hiraeth/app": "^2.0",
-        "hiraeth/markdown": "^2.0",
+        "hiraeth/app": "^3.0",
+        "hiraeth/markdown": "^3.0",
         "league/commonmark": "^1.0"
     },
     "require-dev": {
