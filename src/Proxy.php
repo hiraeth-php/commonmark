@@ -14,9 +14,9 @@ class Proxy implements Parser
 	/**
 	 * The markdown converter we're proxying
 	 *
-	 * @var CommonMark\Converter|null
+	 * @var CommonMark\MarkdownConverter
 	 */
-	protected $converter = NULL;
+	protected $converter;
 
 
 	/**

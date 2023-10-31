@@ -37,7 +37,7 @@
 	;
 
 	extensions = [
-		"League\CommonMark\Extension\CommonMarkCoreExtension",
+		"League\CommonMark\Extension\CommonMark\CommonMarkCoreExtension",
 		"League\CommonMark\Extension\GithubFlavoredMarkdownExtension",
 		"League\CommonMark\Extension\Attributes\AttributesExtension",
 		"League\CommonMark\Extension\SmartPunct\SmartPunctExtension"
